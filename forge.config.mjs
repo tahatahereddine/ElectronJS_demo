@@ -53,6 +53,19 @@ const config = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      "name": "@electron-forge/publisher-github",
+      "config": {
+        "repository": {
+          "owner": "Chocolaterie",
+          "name": "M2_DEV_SP_02_Electron"
+        },
+        "prerelease": false,
+        "draft": true
+      }
+    }
+  ]
 };
 
 export default config;
